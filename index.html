@@ -11,43 +11,48 @@
 
 <body>
 
-	<header>
-		<button type="button"><img src="./img/menu.svg" alt=""></button>
+	<header class="header">
+		<button type="button" class="header__btn-menu"><img src="./img/menu.svg" alt=""></button>
 		<img src="./img/logo.svg" alt="Логотип">
 		<img src="./img/divider.svg" alt="">
-		<button type="button"><img src="./img/call.svg" alt=""></button>
-		<button type="button"><img src="./img/chat.svg" alt=""></button>
-		<button type="button"><img src="./img/profile.svg" alt=""></button>
-		<img src="./img/divider.svg" alt="">
-		<button type="button"><img src="./img/support.svg" alt=""></button>
-		<button type="button"><img src="./img/search.svg" alt=""></button>
+		<div class="header__btn-support">
+			<button type="button" class="header__btn-call"><img src="./img/call.svg" alt=""></button>
+			<button type="button" class="header__btn-chat"><img src="./img/chat.svg" alt=""></button>
+			<button type="button" class="header__btn-profile"><img src="./img/profile.svg" alt=""></button>
+			<img src="./img/divider.svg" alt="">
+		</div>
+		<button type="button" class="header__btn-repair"><img src="./img/repair.svg" alt=""></button>
+		<button type="button" class="header__btn-search"><img src="./img/search.svg" alt=""></button>
 	</header>
 
-	<main>
-		<h1>Услуги и сервисы</h1>
-
-		<ul>
-			<li>Ремонтируемые бренды</li>
-			<li>Ремонтируемые устройства</li>
-			<li>Цены на услуги</li>
-			<li>Адреса сервисных центров</li>
-			<li>Специальные цены</li>
-			<li>Отзывы</li>
-		</ul>
-
-		<p>
+	<main class="main">
+		<div class="main__title-container">
+			<h1 class="main__title">Услуги и сервисы</h1>
+		</div>
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li>Ремонтируемые бренды</li>
+				<li>Ремонтируемые устройства</li>
+				<li>Цены на услуги</li>
+				<li>Адреса сервисных центров</li>
+				<li>Специальные цены</li>
+				<li>Отзывы</li>
+			</ul>
+		</nav>
+		<p class="main__description">
 			Мы являемся авторизованным сервисным центром по ремонту техники Dell.
 			Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
 			<span>
 				Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
 				количество
-				постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
+				постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
+				нас
 				родным и близким.
 			</span>
 		</p>
-		<button type="button"><img src="./img/arrows.svg" alt=""> Читать далее</button>
-		<img src="./img/CPS.png" alt="Логотип CPS">
+		<button type="button" class="main__read-more"><img src="./img/arrows.svg" alt=""> Читать далее</button>
+		<img src="./img/CPS.png" alt="Логотип CPS" class="main__cps">
 	</main>
 
 </body>
