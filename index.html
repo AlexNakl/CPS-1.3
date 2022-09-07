@@ -12,25 +12,23 @@
 <body>
 
 	<header class="header">
-		<button type="button"><img src="./img/menu.svg" alt=""></button>
-		<img src="./img/logo.svg" alt="Логотип">
-		<img src="./img/divider.svg" alt="">
+		<button type="button" class="header__btn-menu"></button>
+		<img src="./img/logo.svg" alt="Логотип" class="header__btn-logo">
 		<div class="header__support">
-			<button type="button"><img src="./img/call.svg" alt=""></button>
-			<button type="button"><img src="./img/chat.svg" alt=""></button>
-			<button type="button"><img src="./img/profile.svg" alt=""></button>
-			<img src="./img/divider.svg" alt="">
+			<button type="button" class="header__btn-call"></button>
+			<button type="button" class="header__btn-chat"></button>
+			<button type="button" class="header__btn-profile"></button>
 		</div>
-		<button type="button" class="header__btn-repair"><img src="./img/repair.svg" alt=""></button>
-		<button type="button" class="header__btn-search"><img src="./img/search.svg" alt=""></button>
+		<button type="button" class="header__btn-repair"></button>
+		<button type="button" class="header__btn-search"></button>
 	</header>
 
 	<main class="main">
 		<div class="main__title-container">
 			<h1 class="main__title">Услуги и сервисы</h1>
 			<div class="menu-container">
-				<button type="button"><span>Оставить заявку</span><img src="./img/repair.svg" alt=""></button>
-				<button type="button"><span>Статус ремонта</span><img src="./img/search.svg" alt=""></button>
+				<button type="button" class="menu-container__btn-repair">Оставить заявку</button>
+				<button type="button" class="menu-container__btn-search">Статус ремонта</button>
 			</div>
 		</div>
 		<nav class="navigation">
@@ -44,20 +42,20 @@
 			</ul>
 		</nav>
 		<div class="main__description-container">
-			<div>
-				<p class="main__description">
+			<section class="description">
+				<p class="description__text">
 					Мы являемся авторизованным сервисным центром по ремонту техники Dell.
 					Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-					<span class="main__description-continued">
+					<span class="description__text-continued">
 						Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
 						количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
 						очередь,
 						советуют нас родным и близким.
 					</span>
 				</p>
-				<button type="button" class="main__read-more">Читать далее</button>
-			</div>
-			<img src="./img/CPS.png" alt="Логотип CPS" class="main__cps">
+				<button type="button" class="description__btn-read-more">Читать далее</button>
+			</section>
+			<img src="./img/CPS.jpg" alt="Фото логотипа CPS" class="photo-cps">
 		</div>
 	</main>
 
