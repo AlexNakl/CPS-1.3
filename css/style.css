@@ -150,7 +150,6 @@ button {
 
 .main {
 	background-color: #F8F8F8;
-	overflow: hidden;
 }
 
 .main__title-container {
@@ -187,7 +186,6 @@ button {
 }
 
 .navigation {
-	overflow: hidden;
 	margin-left: 16px;
 	margin-right: 16px;
 	margin-top: 24px;
@@ -199,7 +197,7 @@ button {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	overflow: auto;
+	overflow: scroll;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
@@ -209,6 +207,7 @@ button {
 
 .navigation__list::-webkit-scrollbar {
 	width: 0;
+	height: 0;
 }
 
 .navigation__list button {
