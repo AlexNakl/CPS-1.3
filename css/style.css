@@ -116,20 +116,6 @@ button {
 	background-repeat: no-repeat;
 }
 
-.header__btn-repair {
-	width: 40px;
-	height: 40px;
-	background-image: url(../img/repair.svg);
-	background-repeat: no-repeat;
-}
-
-.header__btn-search {
-	width: 40px;
-	height: 40px;
-	background-image: url(../img/search.svg);
-	background-repeat: no-repeat;
-}
-
 .header__btn-logo {
 	order: -4;
 }
@@ -146,6 +132,20 @@ button {
 	height: 32px;
 	border: 1px solid #EAEAEA;
 	border-radius: 1px;
+}
+
+.btn-repair {
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/repair.svg);
+	background-repeat: no-repeat;
+}
+
+.btn-search {
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
 }
 
 .main {
@@ -210,8 +210,7 @@ button {
 	height: 0;
 }
 
-.navigation__list button {
-
+.navigation__button {
 	padding: 8px 10px 8px 16px;
 	border: 2px solid transparent;
 	margin-right: 2px;
@@ -219,8 +218,8 @@ button {
 	user-select: none;
 }
 
-.navigation__list button:focus,
-.navigation__list button:active {
+.navigation__button:focus,
+.navigation__button:active {
 	outline: none;
 	background-color: #ffffff;
 	border: 2px solid #B8FFEC;
@@ -298,11 +297,11 @@ button {
 		margin-left: 16px;
 	}
 
-	.header .header__btn-repair {
+	.header .btn-repair {
 		margin-right: 16px;
 	}
 
-	.header .header__btn-search {
+	.header .btn-search {
 		margin-right: 0;
 	}
 
@@ -316,7 +315,7 @@ button {
 		margin-top: 32px;
 	}
 
-	.navigation__list button {
+	.navigation__button {
 		padding: 8px 10px 8px 16px;
 		margin-right: 0;
 	}
@@ -381,26 +380,16 @@ button {
 		margin-left: auto;
 	}
 
-	.menu-container__btn-repair {
+	.btn-repair {
 		width: 170px;
-		height: 40px;
-		background-image: url(../img/repair.svg);
-		background-repeat: no-repeat;
 		background-position: right;
 		margin-right: 32px;
 	}
 
-	.menu-container__btn-search {
+	.btn-search {
 		width: 170px;
-		height: 40px;
-		background-image: url(../img/search.svg);
-		background-repeat: no-repeat;
 		background-position: right;
 		margin-right: 32px;
-	}
-
-	.menu-container img {
-		margin-left: 8px;
 	}
 
 	.navigation {
@@ -412,16 +401,11 @@ button {
 
 	.navigation__list {
 		flex-wrap: wrap;
-		justify-content: space-between;
 	}
 
-	.navigation__list button {
+	.navigation__button {
 		padding: 8px 10px;
 		margin-right: 0;
-	}
-
-	.navigation__list li:last-child {
-		margin-right: auto;
 	}
 
 	.main__description-container {
