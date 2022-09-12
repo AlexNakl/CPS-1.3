@@ -16,56 +16,50 @@
 <body>
 
 	<header class="header">
-		<button class="header__item--position--minus-five btn btn--icon-menu btn--size--s btn--pink"
+		<button class="header__btn-menu--position--minus-five btn btn--icon-menu btn--size--s btn--pink"
 			type="button"></button>
-		<img class="header__item-logo" src="./img/logo.svg" alt="Логотип">
+		<img class="header__btn-logo" src="./img/logo.svg" alt="Логотип">
 		<div class="header__support">
-			<button class="btn btn--icon-call btn--size--s btn--pink" type="button"></button>
-			<button class="btn btn--icon-chat btn--size--s btn--pink" type="button"></button>
-			<button class="btn btn--icon-profile btn--size--s btn--pink" type="button"></button>
+			<button class="header__btn-call" type="button"></button>
+			<button class="header__btn-chat" type="button"></button>
+			<button class="header__btn-profile" type="button"></button>
 		</div>
-		<button class="btn btn--icon-repair btn--size--s btn--pink" type="button"></button>
-		<button class="btn btn--icon-search btn--size--s btn--pink" type="button"></button>
+		<button class="header__btn-repair btn-repair" type="button"></button>
+		<button class="header__btn-search btn-search" type="button"></button>
 	</header>
 
 	<main class="main">
 		<div class="main__title-container">
 			<h1 class="main__title">Услуги и сервисы</h1>
 			<div class="menu-container">
-				<button class="btn btn-container" type="button">
-					Оставить заявку
-					<span class="btn btn--icon-repair btn--size--s btn--pink"></span>
-				</button>
-				<button class="btn btn-container" type="button">
-					Статус ремонта
-					<span class="btn btn--icon-search btn--size--s btn--pink"></span>
-				</button>
+				<button class="btn-repair" type="button">Оставить заявку</button>
+				<button class="btn-search" type="button">Статус ремонта</button>
 			</div>
 		</div>
 		<nav class="navigation">
 			<ul class="navigation__list">
 				<li class="navigation__list-item">
-					<button class="btn navigation__button navigation__button--focused navigation__button--active"
+					<button class="navigation__button navigation__button--focused navigation__button--active"
 						type="button">Ремонтируемые бренды</button>
 				</li>
 				<li class="navigation__list-item">
-					<button class="btn navigation__button navigation__button--focused navigation__button--active"
+					<button class="navigation__button navigation__button--focused navigation__button--active"
 						type="button">Ремонтируемые устройства</button>
 				</li>
 				<li class="navigation__list-item">
-					<button class="btn navigation__button navigation__button--focused navigation__button--active"
+					<button class="navigation__button navigation__button--focused navigation__button--active"
 						type="button">Цены на услуги</button>
 				</li>
 				<li class="navigation__list-item">
-					<button class="btn navigation__button navigation__button--focused navigation__button--active"
+					<button class="navigation__button navigation__button--focused navigation__button--active"
 						type="button">Адреса сервисных центров</button>
 				</li>
 				<li class="navigation__list-item">
-					<button class="btn navigation__button navigation__button--focused navigation__button--active"
+					<button class="navigation__button navigation__button--focused navigation__button--active"
 						type="button">Специальные цены</button>
 				</li>
 				<li class="navigation__list-item">
-					<button class="btn navigation__button navigation__button--focused navigation__button--active"
+					<button class="navigation__button navigation__button--focused navigation__button--active"
 						type="button">Отзывы</button>
 				</li>
 			</ul>
@@ -75,13 +69,13 @@
 				<p class="description__text">
 					Мы являемся авторизованным сервисным центром по ремонту техники Dell.
 					Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+					<span class="description__text-continued">
+						Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+						количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+						очередь, советуют нас родным и близким.
+					</span>
 				</p>
-				<p class="description__text-continued">
-					Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-					количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-					очередь, советуют нас родным и близким.
-				</p>
-				<button class="description__btn-read-more btn btn-container" type="button">Читать далее</button>
+				<button class="description__btn-read-more" type="button">Читать далее</button>
 			</section>
 			<img class="photo-cps" src="./img/CPS.jpg" alt="Фото логотипа CPS">
 		</div>
