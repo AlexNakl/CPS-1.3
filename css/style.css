@@ -186,7 +186,7 @@ p {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	overflow: scroll;
+	overflow: auto;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
@@ -194,9 +194,17 @@ p {
 	color: #7E7E82;
 }
 
+/* Скрываем scrollbar для Chrome, Safari и Opera */
 .navigation__list::-webkit-scrollbar {
-	width: 0;
-	height: 0;
+	display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+.navigation__list {
+	-ms-overflow-style: none;
+	/* IE и Edge */
+	scrollbar-width: none;
+	/* Firefox */
 }
 
 .navigation__button {
