@@ -66,6 +66,7 @@ p {
 	color: inherit;
 	align-items: inherit;
 	text-align: inherit;
+	cursor: pointer;
 }
 
 .btn--icon-menu {
@@ -154,7 +155,7 @@ p {
 	margin-left: -4px;
 	margin-right: 16px;
 	border-right: 4px solid #41F6D7;
-	border-radius: 4px;
+	border-radius: 0 4px 4px 0;
 }
 
 .main__title {
@@ -215,6 +216,7 @@ p {
 	user-select: none;
 }
 
+.navigation__button--hover:hover,
 .navigation__button--focused:focus,
 .navigation__button--active:active {
 	outline: none;

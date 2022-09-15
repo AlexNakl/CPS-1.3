@@ -80,6 +80,7 @@ a:visited {
 	color: inherit;
 	align-items: inherit;
 	text-align: inherit;
+	cursor: pointer;
 }
 
 .btn--icon-close {
@@ -152,13 +153,42 @@ a:visited {
 	margin-left: -4px;
 	margin-right: 20px;
 	border-right: 4px solid #fff;
-	border-radius: 4px;
+	border-radius: 0 4px 4px 0;
+}
+
+.navigation-menu__btn::after {
+	content: "";
+	width: 220px;
+	height: 40px;
+	outline: none;
+	background-color: #f8f8f8;
+	border: 2px solid #B8FFEC;
+	border-radius: 6px;
+	position: absolute;
+	left: -250px;
+	transition: opacity 0.5s, transform 0.5s;
+	transform: translateX(0px);
+	margin-top: -8px;
+	opacity: 0;
+	z-index: 5;
+}
+
+.btn__box--z-position {
+	position: relative;
+	z-index: 10;
 }
 
 .navigation-menu__item--hover:hover::before,
 .navigation-menu__item--focused:focus::before,
 .navigation-menu__item--active:active::before {
 	border-right: 4px solid #41F6D7;
+}
+
+.navigation-menu__item:hover .navigation-menu__btn--hover::after,
+.navigation-menu__item:focus .navigation-menu__btn--focused::after,
+.navigation-menu__item:active .navigation-menu__btn--active::after {
+	opacity: 1;
+	transform: translateX(265px);
 }
 
 .navigation-menu__item--hover:hover,
