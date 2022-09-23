@@ -177,8 +177,11 @@ p {
 
 .navigation {
 	padding-left: 16px;
-	padding-right: 16px;
 	padding-top: 24px;
+}
+
+.navigation__list-item:last-child {
+	padding-right: 16px;
 }
 
 .navigation__list {
@@ -193,6 +196,16 @@ p {
 	line-height: 24px;
 	letter-spacing: -0.2px;
 	color: #7E7E82;
+}
+
+.navigation__list::after {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 44px;
+	right: 0;
+	position: absolute;
+	background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
 /* Скрываем scrollbar для Chrome, Safari и Opera */
@@ -298,8 +311,11 @@ p {
 
 	.navigation {
 		padding-left: 24px;
-		padding-right: 24px;
 		padding-top: 32px;
+	}
+
+	.navigation__list-item:last-child {
+		padding-right: 24px;
 	}
 
 	.navigation__button {
@@ -351,6 +367,11 @@ p {
 
 	.header {
 		display: none;
+	}
+
+	.navigation__list::after {
+		display: none;
+		background: linear-gradient(270deg, #d71818 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 	}
 
 	.main__title-container {
