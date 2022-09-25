@@ -23,5 +23,27 @@ function swiperCard() {
 		init = false;
 	}
 }
+
 swiperCard();
 window.addEventListener("resize", swiperCard);
+
+let servicesContainerNavigation = document.querySelector('.services-container__navigation');
+let buttonShowHide = servicesContainerNavigation.querySelector('.btn-show-hide');
+let servicesContainerList = servicesContainerNavigation.querySelector('.services-container__list');
+let btnClickMemory = false;
+
+buttonShowHide.addEventListener('click', function () {
+	if (!btnClickMemory) {
+		btnClickMemory = true;
+		buttonShowHide.classList.add('btn-open');
+		servicesContainerList.classList.add('services-container__list--opened');
+		buttonShowHide.textContent = 'Скрыть';
+		console.log('Кнопка открыть была нажата');
+	} else {
+		btnClickMemory = false;
+		buttonShowHide.classList.remove('btn-open');
+		servicesContainerList.classList.remove('services-container__list--opened');
+		buttonShowHide.textContent = 'Показать все';
+		console.log('Кнопка закрыть была нажата');
+	}
+});

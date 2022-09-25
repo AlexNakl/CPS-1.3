@@ -267,7 +267,7 @@ p {
 		width: 224px;
 	}
 
-	.show-all {
+	.btn-show-hide {
 		margin: 24px 9px;
 		font-weight: 500;
 		font-size: 16px;
@@ -275,7 +275,7 @@ p {
 		letter-spacing: -0.2px;
 	}
 
-	.show-all::before {
+	.btn-show-hide::before {
 		content: "";
 		width: 8px;
 		height: 11px;
@@ -295,6 +295,20 @@ p {
 
 	.swiper-pagination {
 		display: none;
+	}
+
+	/*Кнопка показать-скрыть*/
+	.services-container__list--opened {
+		height: auto;
+		/*336px;*/
+	}
+
+	.btn-open {
+		margin-top: 46px;
+	}
+
+	.btn-open::before {
+		transform: rotate(180deg);
 	}
 }
 
@@ -320,13 +334,4 @@ p {
 		width: 240px;
 	}
 
-	/*
-	.show-all {
-		margin-top: 46px;
-	}
-
-	.show-all::before {
-		transform: rotate(180deg);
-	}
-	*/
 }
