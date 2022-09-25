@@ -1,3 +1,4 @@
+/*----------------------Свайпер----------------------*/
 let swiper;
 let init = false;
 
@@ -27,6 +28,7 @@ function swiperCard() {
 swiperCard();
 window.addEventListener("resize", swiperCard);
 
+/*----------------------Кнопка----------------------*/
 let servicesContainerNavigation = document.querySelector('.services-container__navigation');
 let buttonShowHide = servicesContainerNavigation.querySelector('.btn-show-hide');
 let servicesContainerList = servicesContainerNavigation.querySelector('.services-container__list');

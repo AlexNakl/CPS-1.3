@@ -300,7 +300,6 @@ p {
 	/*Кнопка показать-скрыть*/
 	.services-container__list--opened {
 		height: auto;
-		/*336px;*/
 	}
 
 	.btn-open {
