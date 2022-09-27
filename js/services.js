@@ -29,23 +29,19 @@ swiperCard();
 window.addEventListener("resize", swiperCard);
 
 /*----------------------Кнопка----------------------*/
-let servicesContainerNavigation = document.querySelector('.services-container__navigation');
-let buttonShowHide = servicesContainerNavigation.querySelector('.btn-show-hide');
-let servicesContainerList = servicesContainerNavigation.querySelector('.services-container__list');
-let btnClickMemory = false;
+const servicesContainerNavigation = document.querySelector('.services-container__navigation');
+const buttonShowHide = servicesContainerNavigation.querySelector('.btn-show-hide');
+const servicesContainerList = servicesContainerNavigation.querySelector('.services-container__list');
 
 buttonShowHide.addEventListener('click', function () {
-	if (!btnClickMemory) {
-		btnClickMemory = true;
-		buttonShowHide.classList.add('btn-open');
-		servicesContainerList.classList.add('services-container__list--opened');
+	if (window.innerWidth < 1664) {
+		buttonShowHide.classList.toggle('btn-open');
+		servicesContainerList.classList.toggle('services-container__list--opened');
+	}
+
+	if (buttonShowHide.classList.contains('btn-open')) {
 		buttonShowHide.textContent = 'Скрыть';
-		console.log('Кнопка открыть была нажата');
 	} else {
-		btnClickMemory = false;
-		buttonShowHide.classList.remove('btn-open');
-		servicesContainerList.classList.remove('services-container__list--opened');
 		buttonShowHide.textContent = 'Показать все';
-		console.log('Кнопка закрыть была нажата');
 	}
 });

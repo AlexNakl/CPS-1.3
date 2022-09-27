@@ -121,10 +121,6 @@ p {
 	border: 2px solid #FF3E79;
 }
 
-.btn--ring {
-	margin-left: auto;
-}
-
 .btn--ring::before {
 	content: "";
 	width: 8px;
@@ -160,45 +156,15 @@ p {
 	background-position: center;
 }
 
-.btn--icon-lenovo {
-	background-image: url(../img/firm/lenovo.png);
-}
-
-.btn--icon-samsung {
-	background-image: url(../img/firm/samsung.png);
-}
-
-.btn--icon-apple {
-	background-image: url(../img/firm/apple.png);
-}
-
-.btn--icon-viewsonic {
-	background-image: url(../img/firm/viewsonic.png);
-}
-
-.btn--icon-bosch {
-	background-image: url(../img/firm/bosch.png);
-}
-
-.btn--icon-hp {
-	background-image: url(../img/firm/hp.png);
-}
-
-.btn--icon-aser {
-	background-image: url(../img/firm/aser.png);
-}
-
-.btn--icon-sony {
-	background-image: url(../img/firm/sony.png);
-}
-
 .services-container__btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 240px;
 	height: 72px;
 	background-color: #ffffff;
 	border: 1px solid #EAEAEA;
 	border-radius: 6px;
-	background-position: 16px;
 	padding: 0 16px;
 }
 
@@ -249,7 +215,14 @@ p {
 		overflow: hidden;
 		row-gap: 16px;
 		column-gap: 24px;
-		justify-content: flex-start;
+		justify-content: space-between;
+	}
+
+	.services-container__list::after {
+		content: "";
+		width: 224px;
+		height: 72px;
+		background-color: transparent;
 	}
 
 	.services-container__item:last-child {
@@ -327,10 +300,25 @@ p {
 		column-gap: 32px;
 	}
 
+	.services-container__list::after {
+		width: 240px;
+	}
+
 	.services-container__btn,
 	.services-container__item,
 	.swiper-wrapper .swiper-slide {
 		width: 240px;
 	}
 
+}
+
+/*--кнопка не активна--- 1664 -----------------------*/
+
+@media (min-width: 1664px) {
+
+	.btn-show-hide {
+		color: #B5B6BC;
+		cursor: auto;
+		margin: 24px 9px;
+	}
 }
